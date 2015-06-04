@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="ru">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <title>Заголовок</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="libs/animate/animate.css">
+    <link rel="stylesheet" href="libs/popUp/magnific-popup.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <script src="libs/less/dist/less-1.7.3.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="libs/fontAwesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/media.css">
+    <script src="libs/modernizr/modernizr.js"></script>
+    <script src="libs/jquery/jquery-1.11.2.min.js"></script>
+    <script src="js/prevJS.js"></script>
+    <!-- <script src="libs/Scroll.js/skrollr.js"></script> -->
+</head>
+
+<body>
+    <!-- Здесь пишем код -->
+    <div class="hidden"></div>
+    <div class="wrapper">
+        <section class="firstSection">
+            <header>
+                <div class="mainLogo">
+                    <img src="img/mainLogoImg.png" alt="" class="logoImg">
+                    <p>Creator from the birth</p>
+                </div>
+                <div class="headerNav">
+                    <ul>
+                        <li onclick="toGo('.secondSection')">Portfolio</li>
+                        <li onclick="toGo('.thirdSection')">About</li>
+                    </ul>
+                    <ul>
+                        <li onclick="toGo('.fourthSection')">Skills</li>
+                        <li onclick="toGo('footer')">Contacts</li>
+                    </ul>
+                </div>
+            </header>
+            <div class="phrase">
+                <p>
+                    <span>Hi</span>, my name is <span>Ser</span>gey Susl<span>ov</span>.
+                    <br> I’m developer, <span>developing</span> web sites and mobile application.
+                    <br> So, You are on my website portfolio, enjoy.
+                </p>
+                <span class="fns">Freelance & Studying</span>
+            </div>
+            <div class="firstArrow"><img src="img/goArrow.png" alt="" class="layer" data-depth="1" data-center="margin-top: 10px;" data-top-bottom="margin-top: -40px;" data-anchor-target=".firstSection"></div>
+        </section>
+        <section class="secondSection">
+            <h2 class="sectionName slideRight">Portfolio</h2>
+            <p class="sectionDescription">Here, you may find my last works.</p>
+            <div class="galleryContainer">
+                <div class="controls" id="Filters">
+                    <button class="filter all" data-filter="all">All</button>
+                    <button class="filter web" data-filter=".category-1">Web</button>
+                    <button class="filter android" data-filter=".category-2"><span><i class="fa fa-android"></i></span></button>
+                </div>
+                <div id="Container">
+                    <div class="mix category-1 open-popup-link" data-my-order="1" href="#fullImg-1"><img src="img/fullSize-img-1-test.png" alt="" onload="imgLoaded(this)">
+                        <div class="galleryHover">
+                            <i class="fa fa-plus-square-o"></i>
+                        </div>
+                    </div>
+                    <div class="mix category-2  open-popup-link" data-my-order="2" href="#fullImg-2"><img src="img/2x-icon.png" alt="" onload="imgLoaded(this)">
+                        <div class="galleryHover">
+                            <i class="fa fa-plus-square-o"></i>
+                        </div>
+                    </div>
+                    <div class="mix category-1  open-popup-link" data-my-order="1" href="#fullImg-3"><img src="img/2x-icon-4.png" alt="" onload="imgLoaded(this)">
+                        <div class="galleryHover">
+                            <i class="fa fa-plus-square-o"></i>
+                        </div>
+                    </div>
+                    <div class="mix category-2  open-popup-link" data-my-order="2" href="#fullImg-4"><img src="img/2x-icon-5.png" alt="" onload="imgLoaded(this)">
+                        <div class="galleryHover">
+                            <i class="fa fa-plus-square-o"></i>
+                        </div>
+                    </div>
+                    <div class="mix category-1  open-popup-link" data-my-order="1" href="#fullImg-5"><img src="img/2x-icon-6.png" alt="" onload="imgLoaded(this)">
+                        <div class="galleryHover">
+                            <i class="fa fa-plus-square-o"></i>
+                        </div>
+                    </div>
+                    <div class="mix category-2  open-popup-link" data-my-order="2" href="#fullImg-6"><img src="img/2x-icon-7.png" alt="" onload="imgLoaded(this)">
+                        <div class="galleryHover">
+                            <i class="fa fa-plus-square-o"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="popup-fullSize-container">
+                <div class="white-popup mfp-hide" id="fullImg-1">
+                    <img src="" data-src="img/fullSize-img-1.png" alt="">
+                </div>
+                <div class="white-popup mfp-hide" id="fullImg-2">
+                    <img src="" data-src="img/2x-icon.png" alt="">
+                </div>
+                <div class="white-popup mfp-hide" id="fullImg-3">
+                    <img src="" data-src="img/2x-icon-3.png" alt="">
+                </div>
+                <div class="white-popup mfp-hide" id="fullImg-4">
+                    <img src="" data-src="img/2x-icon-4.png" alt="">
+                </div>
+                <div class="white-popup mfp-hide" id="fullImg-5">
+                    <img src="" data-src="img/2x-icon-5.png" alt="">
+                </div>
+                <div class="white-popup mfp-hide" id="fullImg-6">
+                    <img src="" data-src="img/2x-icon-6.png" alt="">
+                </div>
+            </div>
+        </section>
+        <div class="thirdSection">
+            <div class="meAvatar">
+                <img src="img/me-img.png" alt="">
+            </div>
+            <h2 class="sectionName slideRight">Me</h2>
+            <p class="sectionDescription">‘n all about</p>
+            <p class="thirdSection-text">
+                Suslov Servey Vladislavovich,<span>website and mobile developer</span> , resident of Barnaul, Russia. I develop websites with unique design and mobile applications for android. I love coffee, standup shows and dogs.Currently, I work as a frilancer on such sites as fl.ru, weblancer.ru, freelance.ru. In addition, I am fond of design and photo retouching.</p>
+        </div>
+        <div class="fourthSection">
+            <h2 class="sectionName slideRight">Skills</h2>
+            <div class="bulbBlock">
+                <div class="borderBlock"></div>
+                <img src="img/bulb-icon.png" alt="">
+                <div class="borderBlock"></div>
+            </div>
+            <div class="clear"></div>
+            <ul class="skill-icons">
+                <li class="skill-icon"><img src="img/html-icon.png" alt=""></li>
+                <li class="skill-icon"><img src="img/css-icon.png" alt=""></li>
+                <li class="skill-icon"><img src="img/js-icon.png" alt=""></li>
+                <li class="skill-icon"><img src="img/java-icon.png" alt=""></li>
+                <li class="skill-icon"><img src="img/android-icon.png" alt=""></li>
+                <li class="skill-icon"><img src="img/ph-icon.png" alt=""></li>
+            </ul>
+            <ul class="stats">
+                <li class="html">HTML</li>
+                <li class="css">CSS3</li>
+                <li class="ph">photoshop retouching</li>
+                <li class="js">Javascript</li>
+                <li class="android">java android apps</li>
+                <li class="java">java 2ee/se</li>
+            </ul>
+            <div class="statsText">
+                One of my bests is websites developing. HTML5/CSS3 and JS arn’t all i can, my knowledge of bootstrap, less, angularJS and php help me in creation of responsive and beautyful pages. I love making beautyful pages and clean code. In addition, I can make android apps, it also helps me in creation of mobile websites versions.
+            </div>
+        </div>
+        <div class="textMeBlock">
+            <h2 class="textMeName">Text me</h2></div>
+        <div class="fifthSection">
+        	<h2 class="sectionName">Here my contacts</h2>
+        	<p>
+        		If  You need website or some programm for android, PC you always can text me on 
+        	</p>
+        	<p>
+        		<strong>
+        			dagerok22@gmail.com<br>
+					brnsitecreator@gmail.com
+        		</strong>
+        	</p>
+        	<p>Also you can find me on :</p>
+        	<div class="socialButtons">
+        		<div class="socialButton googleButton">
+        			<i class="fa fa-google-plus"></i>
+        			Google+
+        			<a href="https://plus.google.com/u/0/115003666664549859265/posts"></a>
+        		</div>
+        		<div class="socialButton vkButton">
+        			<i class="fa fa-vk"></i>
+        			vk.com
+        			<a href="http://vk.com/id179705673"></a>
+        		</div>
+        	</div>
+        </div>
+        <footer>
+        	<img src="img/gear.png" alt="">
+        	<p>
+        		Suslov Sergey//Barnaur, Russia Pv. Tract 62 - Tel. +7(913)253-16-99
+        	</p>
+        	<p>
+        		Waiting for call <i class="fa fa-heart"></i>
+        	</p>
+        </footer>
+    </div>
+    <div class="hidden">Changes</div>
+    <!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+    <!-- <script src="libs/parallax.js/jquery.stellar.js"></script> -->
+    <script src="libs/waypoints/waypoints.min.js"></script>
+    <script src="libs/animate/animate-css.js"></script>
+    <script src="libs/Gallery/jquery.magnific-popup.js"></script>
+    <script src="libs/Gallery/jquery.mixitup.js"></script>
+    <script src="/libs/popUp/popUp.js"></script>
+    <script src="http://ricostacruz.com/jquery.transit/jquery.transit.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="libs/plugins-scroll/plugins-scroll.js"></script>
+</body>
+
+</html>
