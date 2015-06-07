@@ -1,0 +1,116 @@
+@FirstFont: "Andada";
+@FirstFontSC: "AndadaSC";
+@ThinFont: "SSans";
+.firstSection {
+    width: 100%;
+    background: url(../img/firstBackground2.png) top center no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-top: 20px;
+}
+
+header {
+    width: 1070px;
+    height: 196px;
+    background: rgba(0, 0, 0, 0.54);
+    margin: 0 auto;
+}
+
+.mainLogo {
+    display: block;
+    height: 143px;
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.img {
+    display: block;
+    margin: 0 auto;
+}
+
+.mainLogo>p {
+    line-height: 0;
+    text-align: center;
+    color: #fff;
+    font-family: 'Orator Std';
+    font-weight: 400;
+    font-size: 23px;
+}
+
+.headerNav {
+    position: relative;
+    width: 980px;
+    height: 40px;
+    margin: 0 auto;
+    ul {
+        min-width: 10px;
+        padding: 0;
+        float: left;
+        li {
+            float: left;
+            width: 123px;
+            text-align: center;
+            padding: 5px 0;
+            color: #fff;
+            font-family: @FirstFont;
+            font-size: 17px;
+            transition: background 0.2s;
+            &:hover {
+                background: rgba(255, 255, 255, 0.23);
+                cursor: pointer;
+            }
+        }
+        li:nth-of-type(n+2) {
+            margin-left: 30px;
+        }
+    }
+    ul:nth-of-type(n+2) {
+        float: right;
+        li {
+            margin-left: 0;
+        }
+        li:first-child {
+            margin-right: 30px;
+        }
+    }
+}
+
+.phrase {
+    position: relative;
+    width: 730px;
+    background: rgba(0, 0, 0, 0.54);
+    margin: 0 auto;
+    padding: 21px 46px;
+    margin-top: 290px;
+    p {
+        color: #fff;
+        font-family: @FirstFont;
+        font-size: 20px;
+        span {
+            font-family: @FirstFont;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+    }
+    .fns {
+        position: absolute;
+        bottom: 11px;
+        right: 11px;
+        font-family: @ThinFont;
+        font-style: italic;
+        font-weight: 300;
+        font-size: 16px;
+        color: rgba(255, 255, 255, 1);
+    }
+}
+
+.firstArrow {
+    text-align: center;
+    height: 60px;
+    padding: 15px 0;
+    img:hover {
+        cursor: pointer;
+    }
+}

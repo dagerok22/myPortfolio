@@ -65,7 +65,6 @@ $('.firstSection').ready(function(){
 
 	$(window).scroll(function(){
 		var st = $(this).scrollTop();
-		console.log(st);
 		$("header").css({
 			"transform":"translate(0%,-" + st/5 + "%)"
 		});
