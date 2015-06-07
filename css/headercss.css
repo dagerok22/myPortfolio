@@ -1,3 +1,17 @@
+html,
+body {
+  opacity: 0;
+  transition: opacity 1s;
+}
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.6;
+  font-family: "RobotoRegular";
+  overflow-x: hidden;
+}
 .firstSection {
   width: 100%;
   background: url(../img/firstBackground2.png) top center no-repeat;
